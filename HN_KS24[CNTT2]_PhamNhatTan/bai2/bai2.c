@@ -247,6 +247,7 @@ int main()
             whattt[strcspn(whattt, "\n")] = '\0';
             Node *newnode = crNode();
             strcpy(newnode->content, whattt);
+            levalPush(root, newnode);
             break;
         case 4:
             break;
